@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+  font-family: "Open Sans", sans-serif;
+  padding:0;
+  margin:0;
+  box-sizing:border-box
+}
+body{
+  background-color:#555;
+}
+.calender{
+  width:400px;
+  margin:50px auto;
+  background:#fff;
+  padding:5px;
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#fff;
+  background:#3498db;
+  padding:4px;
+}
+button{
+  background:none;
+  cursor:pointer;
+  border:none;
+  font-size:20px;
+  color:#fff;
+}
+select{
+  font-size:18px;
+  padding:0px 8px;
+  border:1px solid #3498db;
+  border-radius:4px;
+  margin:0px 10px;
+}
+.dayofweek{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  font-weight:bold;
+  text-align:center;
+  background:#3498db;
+  padding:10px;
+  color:#fff;
+  margin-bottom:10px;
+}
+.days{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:8px;
+}
+.day,.empty{
+  padding:10px;
+  border:1px solid #ccc;
+  text-align:center;
+  cursor:pointer;
+}
+.empty{
+  background:#f9f9f9f9;
+}
+.day:hover{
+  background:#3498db;
+  color:#fff;
+}
+.current{
+  background:pink;
+  color:#fff;
+}
